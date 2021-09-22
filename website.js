@@ -62,6 +62,9 @@ function check_endgame()
       var button9 = document.getElementById("button9");
       if(button1.innerHTML == button2.innerHTML && button1.innerHTML == button3.innerHTML && button2.innerHTML == button3.innerHTML && (button1.innerHTML == "X" || button1.innerHTML == "0")) 
       {
+        button1.style.backgroundColor = "rgb(247,165,58)";
+        button2.style.backgroundColor = "rgb(247,165,58)";
+        button3.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 == 0)
         myFunction();
         else
@@ -71,6 +74,9 @@ function check_endgame()
       }
       if(button4.innerHTML == button5.innerHTML && button4.innerHTML == button6.innerHTML && button5.innerHTML == button6.innerHTML && (button4.innerHTML == "X" || button4.innerHTML == "0")) 
       {
+        button4.style.backgroundColor = "rgb(247,165,58)";
+        button5.style.backgroundColor = "rgb(247,165,58)";
+        button6.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 == 0)
         myFunction();
         else
@@ -81,6 +87,9 @@ function check_endgame()
       }
       if(button7.innerHTML == button8.innerHTML && button7.innerHTML == button9.innerHTML && button8.innerHTML == button9.innerHTML && (button7.innerHTML == "X" || button7.innerHTML == "0")) 
       {
+        button7.style.backgroundColor = "rgb(247,165,58)";
+        button8.style.backgroundColor = "rgb(247,165,58)";
+        button9.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 == 0)
         myFunction();
         else
@@ -91,6 +100,9 @@ function check_endgame()
       }
       if(button1.innerHTML == button4.innerHTML && button1.innerHTML == button7.innerHTML && button4.innerHTML == button7.innerHTML && (button1.innerHTML == "X" || button1.innerHTML == "0")) 
       {
+        button1.style.backgroundColor = "rgb(247,165,58)";
+        button4.style.backgroundColor = "rgb(247,165,58)";
+        button7.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 == 0)
         myFunction();
         else
@@ -101,6 +113,9 @@ function check_endgame()
       }
       if(button2.innerHTML == button5.innerHTML && button2.innerHTML == button8.innerHTML && button5.innerHTML == button8.innerHTML && (button2.innerHTML == "X" || button2.innerHTML == "0")) 
       {
+        button2.style.backgroundColor = "rgb(247,165,58)";
+        button5.style.backgroundColor = "rgb(247,165,58)";
+        button8.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 == 0)
         myFunction();
         else
@@ -111,6 +126,9 @@ function check_endgame()
       }
       if(button3.innerHTML == button6.innerHTML && button3.innerHTML == button9.innerHTML && button6.innerHTML == button9.innerHTML && (button3.innerHTML == "X" || button3.innerHTML == "0")) 
       {
+        button3.style.backgroundColor = "rgb(247,165,58)";
+        button6.style.backgroundColor = "rgb(247,165,58)";
+        button9.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 == 0)
         myFunction();
         else
@@ -121,6 +139,9 @@ function check_endgame()
       }
       if(button1.innerHTML == button5.innerHTML && button1.innerHTML == button9.innerHTML && button5.innerHTML == button9.innerHTML && (button1.innerHTML == "X" || button1.innerHTML == "0")) 
       {
+        button1.style.backgroundColor = "rgb(247,165,58)";
+        button5.style.backgroundColor = "rgb(247,165,58)";
+        button9.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 == 0)
         myFunction();
         else
@@ -131,6 +152,9 @@ function check_endgame()
       }
       if(button7.innerHTML == button5.innerHTML && button7.innerHTML == button3.innerHTML && button5.innerHTML == button3.innerHTML && (button7.innerHTML == "X" || button7.innerHTML == "0")) 
       {
+        button7.style.backgroundColor = "rgb(247,165,58)";
+        button5.style.backgroundColor = "rgb(247,165,58)";
+        button3.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 == 0)
         myFunction();
         else
