@@ -11,6 +11,19 @@ function myFunction()
     }
 }
 
+function myFunction2() 
+{
+    var a = document.getElementById("myDIV2");
+    if (a.style.display === "none") 
+    {
+      a.style.display = "block";
+    } 
+    else 
+    {
+      a.style.display = "none";
+    }
+}
+
 function change(e1)
 {
   if(e1.innerHTML == "0" || e1.innerHTML == "X")
@@ -46,48 +59,79 @@ function check_endgame()
       var button9 = document.getElementById("button9");
       if(button1.innerHTML == button2.innerHTML && button1.innerHTML == button3.innerHTML && button2.innerHTML == button3.innerHTML && (button1.innerHTML == "X" || button1.innerHTML == "0")) 
       {
-        console.log("Player 1 WON!!!");
+        if(N % 2 == 0)
+        myFunction();
+        else
+        myFunction2();
         GAME_OVER = 1;
         return;
       }
       if(button4.innerHTML == button5.innerHTML && button4.innerHTML == button6.innerHTML && button5.innerHTML == button6.innerHTML && (button4.innerHTML == "X" || button4.innerHTML == "0")) 
       {
+        if(N % 2 == 0)
+        myFunction();
+        else
+        myFunction2();
         console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
       if(button7.innerHTML == button8.innerHTML && button7.innerHTML == button9.innerHTML && button8.innerHTML == button9.innerHTML && (button7.innerHTML == "X" || button7.innerHTML == "0")) 
       {
+        if(N % 2 == 0)
+        myFunction();
+        else
+        myFunction2();
         console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
       if(button1.innerHTML == button4.innerHTML && button1.innerHTML == button7.innerHTML && button4.innerHTML == button7.innerHTML && (button1.innerHTML == "X" || button1.innerHTML == "0")) 
       {
+        if(N % 2 == 0)
+        myFunction();
+        else
+        myFunction2();
         console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
       if(button2.innerHTML == button5.innerHTML && button2.innerHTML == button8.innerHTML && button5.innerHTML == button8.innerHTML && (button2.innerHTML == "X" || button2.innerHTML == "0")) 
       {
+        if(N % 2 == 0)
+        myFunction();
+        else
+        myFunction2();
         console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
       if(button3.innerHTML == button6.innerHTML && button3.innerHTML == button9.innerHTML && button6.innerHTML == button9.innerHTML && (button3.innerHTML == "X" || button3.innerHTML == "0")) 
       {
+        if(N % 2 == 0)
+        myFunction();
+        else
+        myFunction2();
         console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
       if(button1.innerHTML == button5.innerHTML && button1.innerHTML == button9.innerHTML && button5.innerHTML == button9.innerHTML && (button1.innerHTML == "X" || button1.innerHTML == "0")) 
       {
+        if(N % 2 == 0)
+        myFunction();
+        else
+        myFunction2();
         console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
       if(button7.innerHTML == button5.innerHTML && button7.innerHTML == button3.innerHTML && button5.innerHTML == button3.innerHTML && (button7.innerHTML == "X" || button7.innerHTML == "0")) 
       {
+        if(N % 2 == 0)
+        myFunction();
+        else
+        myFunction2();
         console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;

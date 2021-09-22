@@ -16,6 +16,13 @@
   background-color: rgb(151, 218, 132);
   margin-top: 20px;
 }
+#myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgb(162, 46, 240);
+  margin-top: 20px;
+}
 .inline {
   display: inline-block; 
 }
@@ -35,18 +42,26 @@
 </head>
 <body>
 
-<p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
+<!-- <p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p> -->
 
-<button onclick="myFunction()">Click me!</button>
+<!-- <button onclick="myFunction()">Click me!</button>
+<button onclick="myFunction2()">Click me 2!</button> -->
 
 <div id="myDIV">
-Mda
+Player 1 WON!!!
+</div>
+
+<div id="myDIV2">
+Player 2 WON!!!
 </div>
 
 <!-- make the section hidden from the start -->
 <script>
   var y = document.getElementById("myDIV");
   y.style.display = "none"
+
+  var z = document.getElementById("myDIV2");
+  z.style.display = "none"
 </script>
 
 <script>
@@ -55,7 +70,7 @@ Mda
 </script>
 
 
-<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
+<!-- <p><b>Note:</b> The element will not take up any space when the display property set to "none".</p> -->
 
 <script src="website.js"></script>
 
