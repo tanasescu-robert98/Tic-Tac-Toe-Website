@@ -34,12 +34,15 @@ function change(e1)
         
         if(N % 2 == 0)
         {
+          e1.style.backgroundColor = "rgb(35,182,255)";
           e1.innerHTML = "X";
           e1.disabled = true;
         }
         else
         {
+          e1.style.backgroundColor = "rgb(162,46,240)";
           e1.innerHTML = "0";
+          e1.disabled = true;
         }
         console.log(N);
         check_endgame();
