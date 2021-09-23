@@ -57,7 +57,7 @@
       margin: 4px 2px;
       cursor: pointer; 
     }
-    .output_button1 {padding: 50px 169px;}
+    .output_button1 {padding: 50px 170px;}
     .button {
       background-color: #4CAF50; /* Green */
       border: none;
@@ -132,6 +132,43 @@
       right: 45px;
       font-size: 60px;
     }
+
+  .button_calc {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 108px;
+  height: 100px;
+  margin: 4px 2px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button_calc:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button_calc:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
     
     @media screen and (max-height: 450px) {
       .overlay {overflow-y: auto;}
@@ -160,33 +197,33 @@
     <br>
 
         <div class="inline">
-        <button href="#" onclick="change(this)" class="button button1" id="button1">7</button>
-        <button onclick="change(this)" class="button button1" id="button2">8</button>
-        <button onclick="change(this)" class="button button1" id="button3">9</button>
+        <button href="#" onclick="change(this)" class="button_calc" id="button1">7</button>
+        <button onclick="change(this)" class="button_calc" id="button2">8</button>
+        <button onclick="change(this)" class="button_calc" id="button3">9</button>
         </div>
         
         <br/>
         
         <div class="inline">
-          <button onclick="change(this)" class="button button1" id="button4">4</button>
-          <button onclick="change(this)" class="button button1" id="button5">5</button>
-          <button onclick="change(this)" class="button button1" id="button6">6</button>
+          <button onclick="change(this)" class="button_calc" id="button4">4</button>
+          <button onclick="change(this)" class="button_calc" id="button5">5</button>
+          <button onclick="change(this)" class="button_calc" id="button6">6</button>
           
         </div>
         
         <br/>
         
         <div class="inline">
-          <button onclick="change(this)" class="button button1" id="button7">1</button>
-          <button onclick="change(this)" class="button button1" id="button8">2</button>
-          <button onclick="change(this)" class="button button1" id="button9">3</button>
+          <button onclick="change(this)" class="button_calc" id="button7">1</button>
+          <button onclick="change(this)" class="button_calc" id="button8">2</button>
+          <button onclick="change(this)" class="button_calc" id="button9">3</button>
         </div>
 
         <br/>
 
-        <button onclick="change(this)" class="button button1" id="button9">+</button>
-        <button onclick="change(this)" class="button button1" id="button9">-</button>
-        <button onclick="change(this)" class="button button1" id="button9">=</button>
+        <button onclick="change(this)" class="button_calc" id="button9">+</button>
+        <button onclick="change(this)" class="button_calc" id="button9">-</button>
+        <button onclick="change(this)" class="button_calc" id="button9">=</button>
 
         
 </body>
