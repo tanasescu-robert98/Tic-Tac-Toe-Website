@@ -11,6 +11,8 @@ function myFunction()
     }
     var bla3 = document.getElementById("myDIV3");
     bla3.style.display = "none";
+    var bla4 = document.getElementById("myDIV4");
+    bla4.style.display = "none";
 }
 
 function myFunction2() 
@@ -24,8 +26,10 @@ function myFunction2()
     {
       a.style.display = "none";
     }
-    var bla4 = document.getElementById("myDIV4");
-    bla4.style.display = "none";
+    var bla5 = document.getElementById("myDIV3");
+    bla5.style.display = "none";
+    var bla6 = document.getElementById("myDIV4");
+    bla6.style.display = "none";
 }
 
 function change(e1)
