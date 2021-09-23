@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .test{
+        height:100px;
+        width:100px;
+        padding-bottom: 100px;
+        line-height: 100px;
+    }
+    #myDIV {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      /* background-color: rgb(151, 218, 132); */
+      background-color: rgb(35,182,255);
+      margin-top: 20px;
+    }
+    #myDIV2 {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      background-color: rgb(162, 46, 240);
+      margin-top: 20px;
+    }
+    #myDIV3 {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      background-color: rgb(35,182,255);
+      margin-top: 20px;
+    }
+    #myDIV4 {
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+      background-color: rgb(162, 46, 240);
+      margin-top: 20px;
+    }
+    .inline {
+      display: inline-block; 
+    }
+    .output_button {
+      background-color: #47ad55; /* Green */
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      /* font-size: 15px; */
+      margin: 4px 2px;
+      cursor: pointer; 
+    }
+    .output_button1 {padding: 50px 169px;}
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      /* font-size: 15px; */
+      margin: 4px 2px;
+      cursor: pointer; 
+    }
+    .button1 {padding: 50px 50px;}
+    
+    .buttonclickable {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 15px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+    .buttonclickable:hover {background-color: #3e8e41}
+    
+    .buttonclickable:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+    
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay {overflow-y: auto;}
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    }
+    </style>
+<body>
+    <a href="index.html">
+        <button class="buttonclickable">&nbsp; &nbsp; &nbsp; Back &nbsp; &nbsp; &nbsp;</button>
+    </a>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <button onclick="change(this)" class="output_button output_button1" id="button2"></button>
+
+    <br>
+
+        <div class="inline">
+        <button href="#" onclick="change(this)" class="button button1" id="button1">7</button>
+        <button onclick="change(this)" class="button button1" id="button2">8</button>
+        <button onclick="change(this)" class="button button1" id="button3">9</button>
+        </div>
+        
+        <br/>
+        
+        <div class="inline">
+          <button onclick="change(this)" class="button button1" id="button4">4</button>
+          <button onclick="change(this)" class="button button1" id="button5">5</button>
+          <button onclick="change(this)" class="button button1" id="button6">6</button>
+          <button onclick="change(this)" class="button button1" id="button9">-</button>
+        </div>
+        
+        <br/>
+        
+        <div class="inline">
+          <button onclick="change(this)" class="button button1" id="button7">1</button>
+          <button onclick="change(this)" class="button button1" id="button8">2</button>
+          <button onclick="change(this)" class="button button1" id="button9">3</button>
+          <button onclick="change(this)" class="button button1" id="button9">+</button>
+        </div>
+</body>
+</html>
