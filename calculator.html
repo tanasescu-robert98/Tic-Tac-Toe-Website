@@ -181,6 +181,16 @@
     }
     </style>
 <body>
+
+  <script src="calculator.js"></script>
+
+    <script>
+      var result = 0;
+      var first_number = 0;
+      var second_number = 0;
+      var pahar = 0;
+    </script>
+
     <a href="index.html">
         <button class="buttonclickable">&nbsp; &nbsp; &nbsp; Back &nbsp; &nbsp; &nbsp;</button>
     </a>
@@ -192,39 +202,43 @@
     <br>
     <br>
 
-    <button onclick="change(this)" class="output_button output_button1" id="button2"></button>
+    <button onclick="change(this)" class="output_button output_button1" id="result_show">0</button>
 
     <br>
 
         <div class="inline">
-        <button href="#" onclick="change(this)" class="button_calc" id="button1">7</button>
-        <button onclick="change(this)" class="button_calc" id="button2">8</button>
-        <button onclick="change(this)" class="button_calc" id="button3">9</button>
+        <button href="#" onclick="insert(this,this.id)" class="button_calc" id="button7">7</button>
+        <button onclick="insert(this,this.id)" class="button_calc" id="button8">8</button>
+        <button onclick="insert(this,this.id)" class="button_calc" id="button9">9</button>
         </div>
         
         <br/>
         
         <div class="inline">
-          <button onclick="change(this)" class="button_calc" id="button4">4</button>
-          <button onclick="change(this)" class="button_calc" id="button5">5</button>
-          <button onclick="change(this)" class="button_calc" id="button6">6</button>
+          <button onclick="insert(this,this.id)" class="button_calc" id="button4">4</button>
+          <button onclick="insert(this,this.id)" class="button_calc" id="button5">5</button>
+          <button onclick="insert(this,this.id)" class="button_calc" id="button6">6</button>
           
         </div>
         
         <br/>
         
         <div class="inline">
-          <button onclick="change(this)" class="button_calc" id="button7">1</button>
-          <button onclick="change(this)" class="button_calc" id="button8">2</button>
-          <button onclick="change(this)" class="button_calc" id="button9">3</button>
+          <button onclick="insert(this,this.id)" class="button_calc" id="button1">1</button>
+          <button onclick="insert(this,this.id)" class="button_calc" id="button2">2</button>
+          <button onclick="insert(this,this.id)" class="button_calc" id="button3">3</button>
         </div>
 
         <br/>
 
-        <button onclick="change(this)" class="button_calc" id="button9">+</button>
-        <button onclick="change(this)" class="button_calc" id="button9">-</button>
-        <button onclick="change(this)" class="button_calc" id="button9">=</button>
+        <button onclick="add(this)" class="button_calc" id="button_plus">+</button>
+        <button onclick="minus(this)" class="button_calc" id="button_minus">-</button>
+        <button onclick="equal(this)" class="button_calc" id="button_equal">=</button>
 
+    <br>
+    <br>
+
+        <button onclick="reset(this)" class="button_calc" id="button_equal">C</button>
         
 </body>
 </html>
