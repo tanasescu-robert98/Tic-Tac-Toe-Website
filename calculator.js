@@ -2,115 +2,176 @@ function insert(e2,id)
 {
   var result_button = document.getElementById("result_show");
     if(id == "button1")
-        result = result * 10 + 1;
+        shown_number = shown_number * 10 + 1;
     else if(id == "button2")
-        result = result * 10 + 2;
+        shown_number = shown_number * 10 + 2;
     else if(id == "button3")
-        result = result * 10 + 3;
+        shown_number = shown_number * 10 + 3;
     else if(id == "button4")
-        result = result * 10 + 4;
+        shown_number = shown_number * 10 + 4;
     else if(id == "button5")
-        result = result * 10 + 5;
+        shown_number = shown_number * 10 + 5;
     else if(id == "button6")
-        result = result * 10 + 6;
+        shown_number = shown_number * 10 + 6;
     else if(id == "button7")
-        result = result * 10 + 7;
+        shown_number = shown_number * 10 + 7;
     else if(id == "button8")
-        result = result * 10 + 8;
+        shown_number = shown_number * 10 + 8;
     else if(id == "button9")
-        result = result * 10 + 9;
-  console.log(result);
-  result_button.innerHTML = result.toString();
+        shown_number = shown_number * 10 + 9;
+  result_button.innerHTML = shown_number.toString();
+  input_number = shown_number.toString();
+  console.log(input_number);
 }
 
 function add()
 {
-    if(first_number != 0)
+    if(first_number == 0)
     {
-        equal();
-        action_to_do = "add";
-        add();
+        operations = operations + shown_number.toString() + "+";
+        first_number = 1;
+        shown_number = 0;
+        console.log(operations);
     }
     else
     {
-        first_number = result;
-        result = 0;
-        action_to_do = "add";
+        if(previous_operation == "equal")
+        {
+            shown_number = 0;
+            console.log(operations);
+            operations = operations + "+";
+        }
+        else
+        {
+            operations = operations + shown_number.toString() + "+";
+            shown_number = 0;
+            console.log(operations);
+            const new_result = operations.slice(0,-1);
+            console.log(new_result);
+            var result_button = document.getElementById("result_show");
+            result = eval(new_result);
+            result_button.innerHTML = result.toString();
+        }
     }
+    previous_operation = "add";
 }
 
 function minus()
 {
-    if(first_number != 0)
+    if(first_number == 0)
     {
-        equal();
-        action_to_do = "minus";
-        minus();
-        
+        operations = operations + shown_number.toString() + "-";
+        first_number = 1;
+        shown_number = 0;
+        console.log(operations);
     }
     else
     {
-        first_number = result;
-        result = 0;
-        action_to_do = "minus";
+        if(previous_operation == "equal")
+        {
+            shown_number = 0;
+            console.log(operations);
+            operations = operations + "-";
+        }
+        else
+        {
+            operations = operations + shown_number.toString() + "-";
+            shown_number = 0;
+            console.log(operations);
+            const new_result = operations.slice(0,-1);
+            console.log(new_result);
+            var result_button = document.getElementById("result_show");
+            result = eval(new_result);
+            result_button.innerHTML = result.toString();
+        }
     }
+    previous_operation = "minus";
 }
 
 function multiply()
 {
-    if(first_number != 0)
+    if(first_number == 0)
     {
-        equal();
-        action_to_do = "multiply";
-        multiply();
-        
+        operations = operations + shown_number.toString() + "*";
+        first_number = 1;
+        shown_number = 0;
+        console.log(operations);
     }
     else
     {
-        first_number = result;
-        result = 0;
-        action_to_do = "multiply";
+        if(previous_operation == "equal")
+        {
+            shown_number = 0;
+            console.log(operations);
+            operations = operations + "*";
+        }
+        else
+        {
+            operations = operations + shown_number.toString() + "*";
+            shown_number = 0;
+            console.log(operations);
+            const new_result = operations.slice(0,-1);
+            console.log(new_result);
+            var result_button = document.getElementById("result_show");
+            result = eval(new_result);
+            result_button.innerHTML = result.toString();
+        }
     }
+    previous_operation = "multiply";
 }
 
 function divide()
 {
-    if(first_number != 0)
+    if(first_number == 0)
     {
-        equal();
-        action_to_do = "divide";
-        divide();
+        operations = operations + shown_number.toString() + "/";
+        first_number = 1;
+        shown_number = 0;
+        console.log(operations);
     }
     else
     {
-        first_number = result;
-        result = 0;
-        action_to_do = "divide";
+        if(previous_operation == "equal")
+        {
+            shown_number = 0;
+            console.log(operations);
+            operations = operations + "/";
+        }
+        else
+        {
+            operations = operations + shown_number.toString() + "/";
+            shown_number = 0;
+            console.log(operations);
+            const new_result = operations.slice(0,-1);
+            console.log(new_result);
+            var result_button = document.getElementById("result_show");
+            result = eval(new_result);
+            result_button.innerHTML = result.toString();
+        }
     }
+    previous_operation = "divide";
 }
 
 function equal()
 {
-    var result_button = document.getElementById("result_show");
-    console.log(result);
-    if(action_to_do == "add")
-        result = first_number + result;
-    else if(action_to_do == "minus")
-        result = first_number - result;
-    else if(action_to_do == "multiply")
-        result = first_number * result;
-    else if(action_to_do == "divide")
-        if(result != 0)
-            result = first_number / result;
-    result_button.innerHTML = result.toString();
-    first_number = 0;
+    if(previous_operation != "equal")
+    {
+        previous_operation = "equal";
+        var result_button = document.getElementById("result_show");
+        operations = operations + shown_number.toString();
+        result = eval(operations);
+        console.log(result);
+        result_button.innerHTML = result.toString();
+        operations = result.toString();
+    }
 }
 
 function reset()
 {
+    shown_number = 0;
     result = 0;
     first_number = 0;
-    second_number = 0;
+    operations = "";
     var result_button = document.getElementById("result_show");
     result_button.innerHTML = result.toString();
 }

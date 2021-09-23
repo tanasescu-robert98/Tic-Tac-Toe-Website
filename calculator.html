@@ -222,11 +222,13 @@
   <script src="calculator.js"></script>
 
     <script>
+      var shown_number = 0;
       var result = 0;
+      var previous_operation = "none";
       var first_number = 0;
-      var second_number = 0;
-      var pahar = 0;
       var action_to_do = "nothing";
+      var operations = "";
+      var input_number = "";
     </script>
 
     <a href="index.html">
@@ -273,15 +275,15 @@
 
         <br/>
 
-        <button onclick="add(this)" class="button_calc" id="button_plus">+</button>
-        <button onclick="minus(this)" class="button_calc" id="button_minus">-</button>
-        <button onclick="equal(this)" class="button_calc" id="button_equal">=</button>
+        <button onclick="add()" class="button_calc" id="button_plus">+</button>
+        <button onclick="minus()" class="button_calc" id="button_minus">-</button>
+        <button onclick="equal()" class="button_calc" id="button_equal">=</button>
 
     <br>
 
-        <button onclick="multiply(this)" class="button_calc" id="button_multiply">X</button>
-        <button onclick="divide(this)" class="button_calc" id="button_divide">/</button>
-        <button onclick="reset(this)" class="button_calc" id="button_equal">C</button>
+        <button onclick="multiply()" class="button_calc" id="button_multiply">X</button>
+        <button onclick="divide()" class="button_calc" id="button_divide">/</button>
+        <button onclick="reset()" class="button_calc" id="button_equal">C</button>
         
 </body>
 </html>
