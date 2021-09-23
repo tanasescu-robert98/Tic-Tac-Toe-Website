@@ -91,7 +91,7 @@ function check_endgame()
         button4.style.backgroundColor = "rgb(247,165,58)";
         button5.style.backgroundColor = "rgb(247,165,58)";
         button6.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 != 0)
+        if(N % 2 != first_choice)
         myFunction();
         else
         myFunction2();
