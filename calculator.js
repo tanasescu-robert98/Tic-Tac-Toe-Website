@@ -23,35 +23,73 @@ function insert(e2,id)
   result_button.innerHTML = result.toString();
 }
 
-function add(e3)
+function add()
 {
-    first_number = result;
-    result = 0;
-    action_to_do = "add";
+    if(first_number != 0)
+    {
+        equal();
+        action_to_do = "add";
+        add();
+    }
+    else
+    {
+        first_number = result;
+        result = 0;
+        action_to_do = "add";
+    }
 }
 
-function minus(e3)
+function minus()
 {
-    first_number = result;
-    result = 0;
-    action_to_do = "minus";
+    if(first_number != 0)
+    {
+        equal();
+        action_to_do = "minus";
+        minus();
+        
+    }
+    else
+    {
+        first_number = result;
+        result = 0;
+        action_to_do = "minus";
+    }
 }
 
-function multiply(e3)
+function multiply()
 {
-    first_number = result;
-    result = 0;
-    action_to_do = "multiply";
+    if(first_number != 0)
+    {
+        equal();
+        action_to_do = "multiply";
+        multiply();
+        
+    }
+    else
+    {
+        first_number = result;
+        result = 0;
+        action_to_do = "multiply";
+    }
 }
 
-function divide(e3)
+function divide()
 {
-    first_number = result;
-    result = 0;
-    action_to_do = "divide";
+    if(first_number != 0)
+    {
+        equal();
+        action_to_do = "divide";
+        divide();
+    }
+    else
+    {
+        first_number = result;
+        result = 0;
+        action_to_do = "divide";
+    }
 }
 
-function equal(e4)
+function equal()
 {
     var result_button = document.getElementById("result_show");
     console.log(result);
@@ -68,7 +106,7 @@ function equal(e4)
     first_number = 0;
 }
 
-function reset(e5)
+function reset()
 {
     result = 0;
     first_number = 0;
