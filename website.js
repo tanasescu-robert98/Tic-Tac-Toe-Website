@@ -31,8 +31,7 @@ function change(e1)
       if(GAME_OVER == 0)
       {
         N++;
-        
-        if(N % 2 == 0)
+        if(N % 2 != 0)
         {
           e1.style.backgroundColor = "rgb(35,182,255)";
           e1.innerHTML = "X";
@@ -65,7 +64,7 @@ function check_endgame()
         button1.style.backgroundColor = "rgb(247,165,58)";
         button2.style.backgroundColor = "rgb(247,165,58)";
         button3.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 == 0)
+        if(N % 2 != 0)
         myFunction();
         else
         myFunction2();
@@ -77,7 +76,7 @@ function check_endgame()
         button4.style.backgroundColor = "rgb(247,165,58)";
         button5.style.backgroundColor = "rgb(247,165,58)";
         button6.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 == 0)
+        if(N % 2 != 0)
         myFunction();
         else
         myFunction2();
@@ -90,7 +89,7 @@ function check_endgame()
         button7.style.backgroundColor = "rgb(247,165,58)";
         button8.style.backgroundColor = "rgb(247,165,58)";
         button9.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 == 0)
+        if(N % 2 != 0)
         myFunction();
         else
         myFunction2();
@@ -103,7 +102,7 @@ function check_endgame()
         button1.style.backgroundColor = "rgb(247,165,58)";
         button4.style.backgroundColor = "rgb(247,165,58)";
         button7.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 == 0)
+        if(N % 2 != 0)
         myFunction();
         else
         myFunction2();
@@ -116,7 +115,7 @@ function check_endgame()
         button2.style.backgroundColor = "rgb(247,165,58)";
         button5.style.backgroundColor = "rgb(247,165,58)";
         button8.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 == 0)
+        if(N % 2 != 0)
         myFunction();
         else
         myFunction2();
@@ -129,7 +128,7 @@ function check_endgame()
         button3.style.backgroundColor = "rgb(247,165,58)";
         button6.style.backgroundColor = "rgb(247,165,58)";
         button9.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 == 0)
+        if(N % 2 != 0)
         myFunction();
         else
         myFunction2();
@@ -142,7 +141,7 @@ function check_endgame()
         button1.style.backgroundColor = "rgb(247,165,58)";
         button5.style.backgroundColor = "rgb(247,165,58)";
         button9.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 == 0)
+        if(N % 2 != 0)
         myFunction();
         else
         myFunction2();
@@ -155,7 +154,7 @@ function check_endgame()
         button7.style.backgroundColor = "rgb(247,165,58)";
         button5.style.backgroundColor = "rgb(247,165,58)";
         button3.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 == 0)
+        if(N % 2 != 0)
         myFunction();
         else
         myFunction2();
