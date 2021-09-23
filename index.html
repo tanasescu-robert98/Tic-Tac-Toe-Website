@@ -39,6 +39,27 @@
   cursor: pointer; 
 }
 .button1 {padding: 50px 50px;}
+.buttonclickable {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.buttonclickable:hover {background-color: #3e8e41}
+
+.buttonclickable:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 </style>
 </head>
 <body>
@@ -76,7 +97,7 @@ Player 2 WON!!!
 <script src="website.js"></script>
 
 <a href="https://tanasescu-robert98.github.io/website/">
-  <button>Refresh Page</button>
+  <button class="buttonclickable">Refresh Page</button>
 </a>
 
 <!-- <button onClick="window.location.reload()">Refresh Page</button> -->
