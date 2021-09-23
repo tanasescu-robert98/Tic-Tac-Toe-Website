@@ -24,6 +24,20 @@
   background-color: rgb(162, 46, 240);
   margin-top: 20px;
 }
+#myDIV3 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgb(35,182,255);
+  margin-top: 20px;
+}
+#myDIV4 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgb(162, 46, 240);
+  margin-top: 20px;
+}
 .inline {
   display: inline-block; 
 }
@@ -160,6 +174,14 @@ Player 1 WON!!!
 Player 2 WON!!!
 </div>
 
+<div id="myDIV3">
+  Player 1 will start!
+</div>
+
+<div id="myDIV4">
+  Player 2 will start!
+</div>
+
 <!-- make the section hidden from the start -->
 <script>
   var y = document.getElementById("myDIV");
@@ -167,11 +189,44 @@ Player 2 WON!!!
 
   var z = document.getElementById("myDIV2");
   z.style.display = "none"
+
+  var c = document.getElementById("myDIV3");
+  c.style.display = "none"
+
+  var d = document.getElementById("myDIV4");
+  d.style.display = "none"
 </script>
 
 <script>
   var N = 0;
   var GAME_OVER = 0;
+    var first_choice = Math.round(Math.random());
+    console.log(first_choice);
+    if(first_choice == 0)
+    {
+      var l = document.getElementById("myDIV3");
+      if (l.style.display === "none") 
+      {
+        l.style.display = "block";
+      } 
+      else 
+      {
+        l.style.display = "none";
+      }
+    }
+    else
+    {
+      var e = document.getElementById("myDIV4");
+      if (e.style.display === "none") 
+      {
+        e.style.display = "block";
+      } 
+      else 
+      {
+        e.style.display = "none";
+      }
+    }
+  
 </script>
 
 

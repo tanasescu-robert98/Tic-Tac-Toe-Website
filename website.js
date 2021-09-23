@@ -9,6 +9,8 @@ function myFunction()
     {
       x.style.display = "none";
     }
+    var bla3 = document.getElementById("myDIV3");
+    bla3.style.display = "none";
 }
 
 function myFunction2() 
@@ -22,16 +24,25 @@ function myFunction2()
     {
       a.style.display = "none";
     }
+    var bla4 = document.getElementById("myDIV4");
+    bla4.style.display = "none";
 }
 
 function change(e1)
 {
+  var bla = document.getElementById("myDIV3");
+  bla.style.backgroundColor = "rgb(255,255,255)";
+  bla.innerHTML = "Have fun!";
+
+  var bla2 = document.getElementById("myDIV4");
+  bla2.style.backgroundColor = "rgb(255,255,255)";
+  bla2.innerHTML = "Have fun!";
   if(e1.innerHTML == "0" || e1.innerHTML == "X")
           return;    
       if(GAME_OVER == 0)
       {
         N++;
-        if(N % 2 != 0)
+        if(N % 2 != first_choice)
         {
           e1.style.backgroundColor = "rgb(35,182,255)";
           e1.innerHTML = "X";
@@ -64,7 +75,7 @@ function check_endgame()
         button1.style.backgroundColor = "rgb(247,165,58)";
         button2.style.backgroundColor = "rgb(247,165,58)";
         button3.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 != 0)
+        if(N % 2 != first_choice)
         myFunction();
         else
         myFunction2();
@@ -80,7 +91,6 @@ function check_endgame()
         myFunction();
         else
         myFunction2();
-        console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
@@ -89,11 +99,10 @@ function check_endgame()
         button7.style.backgroundColor = "rgb(247,165,58)";
         button8.style.backgroundColor = "rgb(247,165,58)";
         button9.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 != 0)
+        if(N % 2 != first_choice)
         myFunction();
         else
         myFunction2();
-        console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
@@ -102,11 +111,10 @@ function check_endgame()
         button1.style.backgroundColor = "rgb(247,165,58)";
         button4.style.backgroundColor = "rgb(247,165,58)";
         button7.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 != 0)
+        if(N % 2 != first_choice)
         myFunction();
         else
         myFunction2();
-        console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
@@ -115,11 +123,10 @@ function check_endgame()
         button2.style.backgroundColor = "rgb(247,165,58)";
         button5.style.backgroundColor = "rgb(247,165,58)";
         button8.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 != 0)
+        if(N % 2 != first_choice)
         myFunction();
         else
         myFunction2();
-        console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
@@ -128,11 +135,10 @@ function check_endgame()
         button3.style.backgroundColor = "rgb(247,165,58)";
         button6.style.backgroundColor = "rgb(247,165,58)";
         button9.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 != 0)
+        if(N % 2 != first_choice)
         myFunction();
         else
         myFunction2();
-        console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
@@ -141,11 +147,10 @@ function check_endgame()
         button1.style.backgroundColor = "rgb(247,165,58)";
         button5.style.backgroundColor = "rgb(247,165,58)";
         button9.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 != 0)
+        if(N % 2 != first_choice)
         myFunction();
         else
         myFunction2();
-        console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
@@ -154,11 +159,10 @@ function check_endgame()
         button7.style.backgroundColor = "rgb(247,165,58)";
         button5.style.backgroundColor = "rgb(247,165,58)";
         button3.style.backgroundColor = "rgb(247,165,58)";
-        if(N % 2 != 0)
+        if(N % 2 != first_choice)
         myFunction();
         else
         myFunction2();
-        console.log("Player 1 WON!!!");
         GAME_OVER = 1;
         return;
       }
