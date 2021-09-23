@@ -169,6 +169,43 @@
   opacity: 1;
   transition: 0s
 }
+
+.result_calc {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 340px;
+  height: 100px;
+  margin: 4px 2px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.result_calc:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.result_calc:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
     
     @media screen and (max-height: 450px) {
       .overlay {overflow-y: auto;}
@@ -189,6 +226,7 @@
       var first_number = 0;
       var second_number = 0;
       var pahar = 0;
+      var action_to_do = "nothing";
     </script>
 
     <a href="index.html">
@@ -202,7 +240,11 @@
     <br>
     <br>
 
-    <button onclick="change(this)" class="output_button output_button1" id="result_show">0</button>
+    <!-- <button onclick="change(this)" class="output_button output_button1" id="result_show">0</button> -->
+    <br>
+    <br>
+
+    <button onclick="change(this)" class="result_calc" id="result_show">0</button>
 
     <br>
 
@@ -236,8 +278,9 @@
         <button onclick="equal(this)" class="button_calc" id="button_equal">=</button>
 
     <br>
-    <br>
 
+        <button onclick="multiply(this)" class="button_calc" id="button_multiply">X</button>
+        <button onclick="divide(this)" class="button_calc" id="button_divide">/</button>
         <button onclick="reset(this)" class="button_calc" id="button_equal">C</button>
         
 </body>

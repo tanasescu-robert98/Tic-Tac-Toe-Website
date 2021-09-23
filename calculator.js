@@ -27,20 +27,45 @@ function add(e3)
 {
     first_number = result;
     result = 0;
+    action_to_do = "add";
 }
 
 function minus(e3)
 {
     first_number = result;
     result = 0;
+    action_to_do = "minus";
+}
+
+function multiply(e3)
+{
+    first_number = result;
+    result = 0;
+    action_to_do = "multiply";
+}
+
+function divide(e3)
+{
+    first_number = result;
+    result = 0;
+    action_to_do = "divide";
 }
 
 function equal(e4)
 {
     var result_button = document.getElementById("result_show");
     console.log(result);
-    result = result + first_number;
+    if(action_to_do == "add")
+        result = first_number + result;
+    else if(action_to_do == "minus")
+        result = first_number - result;
+    else if(action_to_do == "multiply")
+        result = first_number * result;
+    else if(action_to_do == "divide")
+        if(result != 0)
+            result = first_number / result;
     result_button.innerHTML = result.toString();
+    first_number = 0;
 }
 
 function reset(e5)
