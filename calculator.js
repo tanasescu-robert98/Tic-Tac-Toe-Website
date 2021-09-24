@@ -181,3 +181,13 @@ function reset()
     var result_button = document.getElementById("result_show");
     result_button.innerHTML = result.toString();
 }
+
+/* Open */
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  /* Close */
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
