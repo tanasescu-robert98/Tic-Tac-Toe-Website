@@ -311,11 +311,6 @@ body {
     </a>
   </div>
 
-<!-- <div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
-</div> -->
-
 <br>
 
 <script>
@@ -356,80 +351,64 @@ function myFunction30() {
     &nbsp;
     <a href="https://tanasescu-robert98.github.io/website/newcalc">
       <button class="buttonclickable">Refresh Page</button>
-    </a> 
+    </a>
+
   </div>
   
     <script src="calculator.js"></script>
   
-      <script>
-        var shown_number = 0;
-        var result = 0;
-        var previous_operation = "none";
-        var first_number = 0;
-        var action_to_do = "nothing";
-        var operations = "";
-        var input_number = "";
-      </script>
-  
-      <!-- <div class="inline">
-        <a href="index.html">
-            <button class="buttonclickable">&nbsp; &nbsp; &nbsp; Back &nbsp; &nbsp; &nbsp;</button>
-        </a>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        <a href="https://tanasescu-robert98.github.io/website/calculator.html">
-          <button class="buttonclickable">Refresh Page</button>
-        </a>
-      </div> -->
-  
-      <br>
-      <br>
-      <br>
-  
-      <button onclick="change(this)" class="result_calc" id="result_show">0</button>
-  
-      <br>
-  
-          <div class="inline">
-          <button href="#" onclick="insert(this,this.id)" class="button_calc" id="button7">7</button>
-          <button onclick="insert(this,this.id)" class="button_calc" id="button8">8</button>
-          <button onclick="insert(this,this.id)" class="button_calc" id="button9">9</button>
-          </div>
-          
-          <br/>
-          
-          <div class="inline">
-            <button onclick="insert(this,this.id)" class="button_calc" id="button4">4</button>
-            <button onclick="insert(this,this.id)" class="button_calc" id="button5">5</button>
-            <button onclick="insert(this,this.id)" class="button_calc" id="button6">6</button>
-            
-          </div>
-          
-          <br/>
-          
-          <div class="inline">
-            <button onclick="insert(this,this.id)" class="button_calc" id="button1">1</button>
-            <button onclick="insert(this,this.id)" class="button_calc" id="button2">2</button>
-            <button onclick="insert(this,this.id)" class="button_calc" id="button3">3</button>
-          </div>
-  
-          <br/>
-  
-          <button onclick="add()" class="button_calc" id="button_plus">+</button>
-          <button onclick="minus()" class="button_calc" id="button_minus">-</button>
-          <button onclick="equal()" class="button_calc" id="button_equal">=</button>
-  
-      <br>
-  
-          <button onclick="multiply()" class="button_calc" id="button_multiply">X</button>
-          <button onclick="divide()" class="button_calc" id="button_divide">/</button>
-          <button onclick="reset()" class="button_calc_C" id="button_equal">C</button>
+    <script>
+      var shown_number = 0;
+      var result = 0;
+      var previous_operation = "none";
+      var first_number = 0;
+      var action_to_do = "nothing";
+      var operations = "";
+      var input_number = "";
+    </script>
+
+    <br>
+    <br>
+    <br>
+
+    <button onclick="change(this)" class="result_calc" id="result_show">0</button>
+
+    <br>
+
+    <div class="inline">
+    <button href="#" onclick="insert(this,this.id)" class="button_calc" id="button7">7</button>
+    <button onclick="insert(this,this.id)" class="button_calc" id="button8">8</button>
+    <button onclick="insert(this,this.id)" class="button_calc" id="button9">9</button>
+    </div>
+    
+    <br/>
+    
+    <div class="inline">
+      <button onclick="insert(this,this.id)" class="button_calc" id="button4">4</button>
+      <button onclick="insert(this,this.id)" class="button_calc" id="button5">5</button>
+      <button onclick="insert(this,this.id)" class="button_calc" id="button6">6</button>
+      
+    </div>
+    
+    <br/>
+    
+    <div class="inline">
+      <button onclick="insert(this,this.id)" class="button_calc" id="button1">1</button>
+      <button onclick="insert(this,this.id)" class="button_calc" id="button2">2</button>
+      <button onclick="insert(this,this.id)" class="button_calc" id="button3">3</button>
+    </div>
+
+    <br/>
+
+    <button onclick="add()" class="button_calc" id="button_plus">+</button>
+    <button onclick="minus()" class="button_calc" id="button_minus">-</button>
+    <button onclick="equal()" class="button_calc" id="button_equal">=</button>
+
+    <br>
+
+    <button onclick="multiply()" class="button_calc" id="button_multiply">X</button>
+    <button onclick="divide()" class="button_calc" id="button_divide">/</button>
+    <button onclick="reset()" class="button_calc_C" id="button_equal">C</button>
           
   </body>
   </html>
