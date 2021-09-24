@@ -313,7 +313,17 @@ function myFunction30() {
 
 <script src="website.js"></script>
 
+<script>
+  function changeBodyBg()
+  {
+      console.log(document.body.style.background); 
+      if(document.body.style.background == '')
+        document.body.style.background = 'powderblue';
+      else
+        document.body.style.background = '';
 
+  }
+</script>
 
 <!-- <button onClick="window.location.reload()">Refresh Page</button> -->
 
@@ -361,7 +371,6 @@ function myFunction30() {
 
 <br/>
 
-<br/>
 
 <!-- <button id='expand' class='btn expand' onclick='f1(this)'>Expand</button>
 <button id='expand' class='btn expand' onclick='f1(this)'>Expand</button>
@@ -372,10 +381,16 @@ function myFunction30() {
 <br/>
 <br/> -->
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 <!-- <a href="calculator.html">
   <button class="buttonclickable">&nbsp; &nbsp; &nbsp; Calculator &nbsp; &nbsp; &nbsp;</button>
 </a> -->
+
+<button class="buttonclickable" onclick="changeBodyBg('lime');">&nbsp; &nbsp; &nbsp; Change Theme &nbsp; &nbsp; &nbsp;</button>
+<br>
+<br>
+<br>
+<button class="buttonclickable" >&nbsp; &nbsp; &nbsp; Garbage &nbsp; &nbsp; &nbsp;</button>
 
 </body>
 </html>

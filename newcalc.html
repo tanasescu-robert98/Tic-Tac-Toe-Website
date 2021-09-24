@@ -409,6 +409,30 @@ function myFunction30() {
     <button onclick="multiply()" class="button_calc" id="button_multiply">X</button>
     <button onclick="divide()" class="button_calc" id="button_divide">/</button>
     <button onclick="reset()" class="button_calc_C" id="button_equal">C</button>
+
+    <br>
+    <br>
+    <br>
+
+    <script>
+      function changeBodyBg()
+      {
+          console.log(document.body.style.background); 
+          if(document.body.style.background == '')
+            document.body.style.background = 'powderblue';
+          else
+            document.body.style.background = '';
+    
+      }
+    </script>
+
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    
+    <button class="buttonclickable" onclick="changeBodyBg('lime');">&nbsp; &nbsp; &nbsp; Change Theme &nbsp; &nbsp; &nbsp;</button>
+    <br>
+    <br>
+    <br>
+<button class="buttonclickable" >&nbsp; &nbsp; &nbsp; Garbage &nbsp; &nbsp; &nbsp;</button>
           
   </body>
   </html>
