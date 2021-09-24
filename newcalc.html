@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -65,10 +60,7 @@ body {
   }
 }
 
-
-
-
-    .test{
+.test{
         height:100px;
         width:100px;
         padding-bottom: 100px;
@@ -303,153 +295,139 @@ body {
   opacity: 1;
   transition: 0s
 }
-    
-    /* @media screen and (max-height: 450px) {
-      .overlay {overflow-y: auto;}
-      .overlay a {font-size: 20px}
-      .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-      }
-    } */
-    </style>
+
+
+</style>
 </head>
 <body>
 
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
-  <div class="topnav" id="myTopnav">
-    <a href="homepage.html" >Home</a>
-    <a href="#news" class="active">Tic Tac Toe</a>
-    <a href="#calculator">Calculator</a>
-    <a href="#about">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction30()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  
-  <div style="padding-left:16px">
-    <h2>Responsive Topnav Example</h2>
-    <p>Resize the browser window to see how it works.</p>
-  </div>
-  
-  <script>
-  function myFunction30() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+<div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
-  </script>
-
-
-
-
-
+}
+</script>
 <!-- The overlay -->
 <div id="myNav" class="overlay">
 
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a href="https://tanasescu-robert98.github.io/website">Tic Tac Toe</a>
-    <a href="https://github.com/tanasescu-robert98">Github</a>
-    <a href="https://www.linkedin.com/in/tanasescurobert98/">Linkedin</a>
-    <a href="#">Contact</a>
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="https://tanasescu-robert98.github.io/website">Tic Tac Toe</a>
+      <a href="https://github.com/tanasescu-robert98">Github</a>
+      <a href="https://www.linkedin.com/in/tanasescurobert98/">Linkedin</a>
+      <a href="#">Contact</a>
+    </div>
+  
   </div>
-
-</div>
-
-<div class="inline">
-  <button class="buttonclickable" onclick="openNav()">&nbsp; &nbsp; &nbsp; Menu &nbsp; &nbsp; &nbsp;</button>
-  &nbsp;
-  &nbsp;
-  &nbsp;
-  &nbsp;
-  &nbsp;
-  &nbsp;
-  &nbsp;
-  &nbsp;
-  <a href="https://tanasescu-robert98.github.io/website/calculator">
-    <button class="buttonclickable">Refresh Page</button>
-  </a> 
-</div>
-
-  <script src="calculator.js"></script>
-
-    <script>
-      var shown_number = 0;
-      var result = 0;
-      var previous_operation = "none";
-      var first_number = 0;
-      var action_to_do = "nothing";
-      var operations = "";
-      var input_number = "";
-    </script>
-
-    <!-- <div class="inline">
-      <a href="index.html">
-          <button class="buttonclickable">&nbsp; &nbsp; &nbsp; Back &nbsp; &nbsp; &nbsp;</button>
-      </a>
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      <a href="https://tanasescu-robert98.github.io/website/calculator.html">
-        <button class="buttonclickable">Refresh Page</button>
-      </a>
-    </div> -->
-
-    <br>
-    <br>
-    <br>
-
-    <button onclick="change(this)" class="result_calc" id="result_show">0</button>
-
-    <br>
-
-        <div class="inline">
-        <button href="#" onclick="insert(this,this.id)" class="button_calc" id="button7">7</button>
-        <button onclick="insert(this,this.id)" class="button_calc" id="button8">8</button>
-        <button onclick="insert(this,this.id)" class="button_calc" id="button9">9</button>
-        </div>
-        
-        <br/>
-        
-        <div class="inline">
-          <button onclick="insert(this,this.id)" class="button_calc" id="button4">4</button>
-          <button onclick="insert(this,this.id)" class="button_calc" id="button5">5</button>
-          <button onclick="insert(this,this.id)" class="button_calc" id="button6">6</button>
+  
+  <div class="inline">
+    <button class="buttonclickable" onclick="openNav()">&nbsp; &nbsp; &nbsp; Menu &nbsp; &nbsp; &nbsp;</button>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <a href="https://tanasescu-robert98.github.io/website/calculator">
+      <button class="buttonclickable">Refresh Page</button>
+    </a> 
+  </div>
+  
+    <script src="calculator.js"></script>
+  
+      <script>
+        var shown_number = 0;
+        var result = 0;
+        var previous_operation = "none";
+        var first_number = 0;
+        var action_to_do = "nothing";
+        var operations = "";
+        var input_number = "";
+      </script>
+  
+      <!-- <div class="inline">
+        <a href="index.html">
+            <button class="buttonclickable">&nbsp; &nbsp; &nbsp; Back &nbsp; &nbsp; &nbsp;</button>
+        </a>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="https://tanasescu-robert98.github.io/website/calculator.html">
+          <button class="buttonclickable">Refresh Page</button>
+        </a>
+      </div> -->
+  
+      <br>
+      <br>
+      <br>
+  
+      <button onclick="change(this)" class="result_calc" id="result_show">0</button>
+  
+      <br>
+  
+          <div class="inline">
+          <button href="#" onclick="insert(this,this.id)" class="button_calc" id="button7">7</button>
+          <button onclick="insert(this,this.id)" class="button_calc" id="button8">8</button>
+          <button onclick="insert(this,this.id)" class="button_calc" id="button9">9</button>
+          </div>
           
-        </div>
-        
-        <br/>
-        
-        <div class="inline">
-          <button onclick="insert(this,this.id)" class="button_calc" id="button1">1</button>
-          <button onclick="insert(this,this.id)" class="button_calc" id="button2">2</button>
-          <button onclick="insert(this,this.id)" class="button_calc" id="button3">3</button>
-        </div>
-
-        <br/>
-
-        <button onclick="add()" class="button_calc" id="button_plus">+</button>
-        <button onclick="minus()" class="button_calc" id="button_minus">-</button>
-        <button onclick="equal()" class="button_calc" id="button_equal">=</button>
-
-    <br>
-
-        <button onclick="multiply()" class="button_calc" id="button_multiply">X</button>
-        <button onclick="divide()" class="button_calc" id="button_divide">/</button>
-        <button onclick="reset()" class="button_calc_C" id="button_equal">C</button>
-        
-</body>
-</html>
+          <br/>
+          
+          <div class="inline">
+            <button onclick="insert(this,this.id)" class="button_calc" id="button4">4</button>
+            <button onclick="insert(this,this.id)" class="button_calc" id="button5">5</button>
+            <button onclick="insert(this,this.id)" class="button_calc" id="button6">6</button>
+            
+          </div>
+          
+          <br/>
+          
+          <div class="inline">
+            <button onclick="insert(this,this.id)" class="button_calc" id="button1">1</button>
+            <button onclick="insert(this,this.id)" class="button_calc" id="button2">2</button>
+            <button onclick="insert(this,this.id)" class="button_calc" id="button3">3</button>
+          </div>
+  
+          <br/>
+  
+          <button onclick="add()" class="button_calc" id="button_plus">+</button>
+          <button onclick="minus()" class="button_calc" id="button_minus">-</button>
+          <button onclick="equal()" class="button_calc" id="button_equal">=</button>
+  
+      <br>
+  
+          <button onclick="multiply()" class="button_calc" id="button_multiply">X</button>
+          <button onclick="divide()" class="button_calc" id="button_divide">/</button>
+          <button onclick="reset()" class="button_calc_C" id="button_equal">C</button>
+          
+  </body>
+  </html>
