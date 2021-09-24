@@ -1,6 +1,11 @@
 function insert(e2,id)
 {
   var result_button = document.getElementById("result_show");
+  if(previous_operation == "equal")
+  {
+      reset();
+      previous_operation = "reset";
+  }
     if(id == "button1")
         shown_number = shown_number * 10 + 1;
     else if(id == "button2")
@@ -163,6 +168,7 @@ function equal()
         console.log(result);
         result_button.innerHTML = result.toString();
         operations = result.toString();
+        //shown_number = 0;
     }
 }
 
