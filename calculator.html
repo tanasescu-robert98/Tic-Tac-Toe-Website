@@ -170,10 +170,47 @@
   transition: 0s
 }
 
+.button_calc_C {
+  position: relative;
+  background-color: #4CAF50;
+  border: 2px solid #f44336;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 108px;
+  height: 100px;
+  margin: 4px 2px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button_calc_C:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button_calc_C:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
 .result_calc {
   position: relative;
   background-color: #4CAF50;
-  border: none;
+  border: 2px solid rgb(0, 0, 0);
   font-size: 28px;
   color: #FFFFFF;
   padding: 20px;
@@ -289,7 +326,7 @@
 
         <button onclick="multiply()" class="button_calc" id="button_multiply">X</button>
         <button onclick="divide()" class="button_calc" id="button_divide">/</button>
-        <button onclick="reset()" class="button_calc" id="button_equal">C</button>
+        <button onclick="reset()" class="button_calc_C" id="button_equal">C</button>
         
 </body>
 </html>
