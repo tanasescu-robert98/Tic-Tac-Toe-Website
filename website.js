@@ -32,6 +32,23 @@ function show_player2_win()
     bla6.style.display = "none";
 }
 
+function show_TIE() 
+{
+    var z = document.getElementById("myDIV5");
+    if (z.style.display === "none") 
+    {
+      z.style.display = "block";
+    } 
+    else 
+    {
+      z.style.display = "none";
+    }
+    var bla7 = document.getElementById("myDIV3");
+    bla7.style.display = "none";
+    var bla8 = document.getElementById("myDIV4");
+    bla8.style.display = "none";
+}
+
 function set_x_or_0(e1)
 {
   var bla = document.getElementById("myDIV3");
@@ -168,6 +185,13 @@ function check_endgame()
         else
         show_player2_win();
         GAME_OVER = 1;
+        return;
+      }
+      if( (button1.innerHTML == "X" || button1.innerHTML == "0") && (button2.innerHTML == "X" || button2.innerHTML == "0") && (button3.innerHTML == "X" || button3.innerHTML == "0") && (button4.innerHTML == "X" || button4.innerHTML == "0") && (button5.innerHTML == "X" || button5.innerHTML == "0")
+      && (button6.innerHTML == "X" || button6.innerHTML == "0") && (button7.innerHTML == "X" || button7.innerHTML == "0") && (button8.innerHTML == "X" || button8.innerHTML == "0") && (button9.innerHTML == "X" || button9.innerHTML == "0"))
+      {
+        show_TIE();
+        GAME_OVER =1;
         return;
       }
 }
