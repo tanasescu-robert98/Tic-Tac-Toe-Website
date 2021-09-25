@@ -60,14 +60,13 @@ body {
   }
 }
 
-
-
 .test{
     height:100px;
     width:100px;
     padding-bottom: 100px;
     line-height: 100px;
 }
+
 #myDIV {
   width: 100%;
   padding: 50px 0;
@@ -76,6 +75,7 @@ body {
   background-color: rgb(35,182,255);
   margin-top: 20px;
 }
+
 #myDIV2 {
   width: 100%;
   padding: 50px 0;
@@ -83,6 +83,7 @@ body {
   background-color: rgb(162, 46, 240);
   margin-top: 20px;
 }
+
 #myDIV3 {
   width: 100%;
   padding: 50px 0;
@@ -90,6 +91,7 @@ body {
   background-color: rgb(35,182,255);
   margin-top: 20px;
 }
+
 #myDIV4 {
   width: 100%;
   padding: 50px 0;
@@ -97,9 +99,11 @@ body {
   background-color: rgb(162, 46, 240);
   margin-top: 20px;
 }
+
 .inline {
   display: inline-block; 
 }
+
 .button {
   position: relative;
   background-color: #4CAF50;
@@ -151,13 +155,17 @@ body {
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
-.buttonclickable:hover {background-color: #3e8e41}
+
+.buttonclickable:hover {
+  background-color: #3e8e41
+}
 
 .buttonclickable:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 .overlay {
   height: 0%;
   width: 100%;
@@ -198,7 +206,6 @@ body {
   right: 45px;
   font-size: 60px;
 }
-
 </style>
 </head>
 <body>
@@ -213,11 +220,6 @@ body {
   </a>
 </div>
 
-<!-- <div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
-</div> -->
-
 <br>
 
 <script>
@@ -231,143 +233,88 @@ function myFunction30() {
 }
 </script>
 
-<!-- The overlay -->
 <div id="myNav" class="overlay">
-
-    <!-- Button to close the overlay navigation -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-    <!-- Overlay content -->
     <div class="overlay-content">
-      <!-- <a href="https://tanasescu-robert98.github.io/website/newcalc">Calculator</a> -->
       <a href="https://github.com/tanasescu-robert98">Github</a>
       <a href="https://www.linkedin.com/in/tanasescurobert98/">Linkedin</a>
       <a href="#">Contact</a>
     </div>
+</div>
   
+<div class="inline">
+  <button class="buttonclickable" onclick="openNav()">&nbsp; &nbsp; &nbsp; Menu &nbsp; &nbsp; &nbsp;</button>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="https://tanasescu-robert98.github.io/website/">
+    <button class="buttonclickable">Refresh Page</button>
+  </a> 
   </div>
   
-  <!-- Use any element to open/show the overlay navigation menu -->
-  <!-- <span onclick="openNav()">open</span> -->
-  
-  <!-- <p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p> -->
-  
-  <!-- <button onclick="myFunction()">Click me!</button>
-  <button onclick="myFunction2()">Click me 2!</button> -->
-  
-  <div class="inline">
-    <button class="buttonclickable" onclick="openNav()">&nbsp; &nbsp; &nbsp; Menu &nbsp; &nbsp; &nbsp;</button>
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    <a href="https://tanasescu-robert98.github.io/website/">
-      <button class="buttonclickable">Refresh Page</button>
-    </a> 
-  </div>
-  
-  <div id="myDIV">
+<div id="myDIV">
   Player 1 WON!!!
-  </div>
+</div>
   
-  <div id="myDIV2">
+<div id="myDIV2">
   Player 2 WON!!!
-  </div>
+</div>
   
-  <div id="myDIV3">
-    Player 1 will start!
-  </div>
+<div id="myDIV3">
+  Player 1 will start!
+</div>
   
-  <div id="myDIV4">
-    Player 2 will start!
-  </div>
+<div id="myDIV4">
+  Player 2 will start!
+</div>
   
-  <!-- make the section hidden from the start -->
-  <script>
-    var y = document.getElementById("myDIV");
-    y.style.display = "none"
+<script>
+  var y = document.getElementById("myDIV");
+  y.style.display = "none"
   
-    var z = document.getElementById("myDIV2");
-    z.style.display = "none"
+  var z = document.getElementById("myDIV2");
+  z.style.display = "none"
   
-    var c = document.getElementById("myDIV3");
-    c.style.display = "none"
+  var c = document.getElementById("myDIV3");
+  c.style.display = "none"
   
-    var d = document.getElementById("myDIV4");
-    d.style.display = "none"
-  </script>
+  var d = document.getElementById("myDIV4");
+  d.style.display = "none"
+</script>
   
-  <script>
-    var N = 0;
-    var GAME_OVER = 0;
-      var first_choice = Math.round(Math.random());
-      console.log(first_choice);
-      if(first_choice == 0)
-      {
-        var l = document.getElementById("myDIV3");
-        if (l.style.display === "none") 
-        {
-          l.style.display = "block";
-        } 
-        else 
-        {
-          l.style.display = "none";
-        }
-      }
-      else
-      {
-        var e = document.getElementById("myDIV4");
-        if (e.style.display === "none") 
-        {
-          e.style.display = "block";
-        } 
-        else 
-        {
-          e.style.display = "none";
-        }
-      }
-    
-  </script>
-
-<!-- <p><b>Note:</b> The element will not take up any space when the display property set to "none".</p> -->
+<script>
+  var N = 0;
+  var GAME_OVER = 0;
+  var first_choice = Math.round(Math.random());
+  console.log(first_choice);
+  if(first_choice == 0)
+  {
+    var l = document.getElementById("myDIV3");
+    if (l.style.display === "none") 
+    {
+      l.style.display = "block";
+    } 
+    else 
+    {
+      l.style.display = "none";
+    }
+  }
+  else
+  {
+    var e = document.getElementById("myDIV4");
+    if (e.style.display === "none") 
+    {
+      e.style.display = "block";
+    } 
+    else 
+    {
+      e.style.display = "none";
+    }
+  }  
+</script>
 
 <script src="website.js"></script>
 <script src="website_themes.js"></script>
 
-
-<!-- <script>
-  function changeBodyBg()
-  {
-      console.log(document.body.style.background); 
-      if(document.body.style.background == '')
-        document.body.style.background = 'powderblue';
-      else
-        document.body.style.background = '';
-
-  }
-</script> -->
-
-<!-- <button onClick="window.location.reload()">Refresh Page</button> -->
-
-<!-- <div style="width:200px;">
-    <button type="submit" class="msgBtn" onClick="return false;" >Save</button>
-    <button type="submit" class="msgBtn2" onClick="return false;">Publish</button>
-    <button class="msgBtnBack">Back</button>
-</div> -->
-
-<br/>
-
-<br/>
-
-<!-- <div class="inline">
-    <button type="submit" class="test" onClick="return false;" >P</button>
-    <button type="submit" class="test" onClick="return false;" ></button>
-    <button class="test"></button>
-</div> -->
+<br/><br/>
 
 <div class="inline">
 <button href="#" onclick="change(this)" class="button" id="button1">&nbsp&nbsp</button>
@@ -391,31 +338,14 @@ function myFunction30() {
   <button onclick="change(this)" class="button" id="button9">&nbsp&nbsp</button>
 </div>
 
-<br/>
-
-<br/>
-
-<br/>
-
-
-<!-- <button id='expand' class='btn expand' onclick='f1(this)'>Expand</button>
-<button id='expand' class='btn expand' onclick='f1(this)'>Expand</button>
-<button id='expand' class='btn expand' onclick='f1(this)'>Expand</button>
-<button id='expand' class='btn expand' onclick='f1(this)'>Expand</button>
-
-<br/>
-<br/>
-<br/> -->
+<br/><br/><br/>
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<!-- <a href="calculator.html">
-  <button class="buttonclickable">&nbsp; &nbsp; &nbsp; Calculator &nbsp; &nbsp; &nbsp;</button>
-</a> -->
 
 <button class="buttonclickable" onclick="changeBodyBg('lime');">&nbsp; &nbsp; &nbsp; Change Theme &nbsp; &nbsp; &nbsp;</button>
-<br>
-<br>
-<br>
+
+<br><br><br>
+
 <button class="buttonclickable" >&nbsp; &nbsp; &nbsp; Garbage &nbsp; &nbsp; &nbsp;</button>
 
 </body>
