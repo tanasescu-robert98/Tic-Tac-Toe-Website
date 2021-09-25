@@ -1,4 +1,4 @@
-function myFunction() 
+function show_player1_win() 
 {
     var x = document.getElementById("myDIV");
     if (x.style.display === "none") 
@@ -15,7 +15,7 @@ function myFunction()
     bla4.style.display = "none";
 }
 
-function myFunction2() 
+function show_player2_win() 
 {
     var a = document.getElementById("myDIV2");
     if (a.style.display === "none") 
@@ -32,7 +32,7 @@ function myFunction2()
     bla6.style.display = "none";
 }
 
-function change(e1)
+function set_x_or_0(e1)
 {
   var bla = document.getElementById("myDIV3");
   bla.style.backgroundColor = "rgb(255,255,255)";
@@ -80,9 +80,9 @@ function check_endgame()
         button2.style.backgroundColor = "rgb(247,165,58)";
         button3.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 != first_choice)
-        myFunction();
+        show_player1_win();
         else
-        myFunction2();
+        show_player2_win();
         GAME_OVER = 1;
         return;
       }
@@ -92,9 +92,9 @@ function check_endgame()
         button5.style.backgroundColor = "rgb(247,165,58)";
         button6.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 != first_choice)
-        myFunction();
+        show_player1_win();
         else
-        myFunction2();
+        show_player2_win();
         GAME_OVER = 1;
         return;
       }
@@ -104,9 +104,9 @@ function check_endgame()
         button8.style.backgroundColor = "rgb(247,165,58)";
         button9.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 != first_choice)
-        myFunction();
+        show_player1_win();
         else
-        myFunction2();
+        show_player2_win();
         GAME_OVER = 1;
         return;
       }
@@ -116,9 +116,9 @@ function check_endgame()
         button4.style.backgroundColor = "rgb(247,165,58)";
         button7.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 != first_choice)
-        myFunction();
+        show_player1_win();
         else
-        myFunction2();
+        show_player2_win();
         GAME_OVER = 1;
         return;
       }
@@ -128,9 +128,9 @@ function check_endgame()
         button5.style.backgroundColor = "rgb(247,165,58)";
         button8.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 != first_choice)
-        myFunction();
+        show_player1_win();
         else
-        myFunction2();
+        show_player2_win();
         GAME_OVER = 1;
         return;
       }
@@ -140,9 +140,9 @@ function check_endgame()
         button6.style.backgroundColor = "rgb(247,165,58)";
         button9.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 != first_choice)
-        myFunction();
+        show_player1_win();
         else
-        myFunction2();
+        show_player2_win();
         GAME_OVER = 1;
         return;
       }
@@ -152,9 +152,9 @@ function check_endgame()
         button5.style.backgroundColor = "rgb(247,165,58)";
         button9.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 != first_choice)
-        myFunction();
+        show_player1_win();
         else
-        myFunction2();
+        show_player2_win();
         GAME_OVER = 1;
         return;
       }
@@ -164,27 +164,18 @@ function check_endgame()
         button5.style.backgroundColor = "rgb(247,165,58)";
         button3.style.backgroundColor = "rgb(247,165,58)";
         if(N % 2 != first_choice)
-        myFunction();
+        show_player1_win();
         else
-        myFunction2();
+        show_player2_win();
         GAME_OVER = 1;
         return;
       }
 }
 
-function f1(objButton)
-{
-    if (objButton.innerHTML=="EXPAND") objButton.innerHTML = "MINIMIZE";
-    else 
-      objButton.innerHTML = "EXPAND";
-}
-
-/* Open */
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
 }
 
-/* Close */
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
