@@ -1,11 +1,11 @@
 function insert(e2,id)
 {
-  var result_button = document.getElementById("result_show");
-  if(previous_operation == "equal")
-  {
-      reset();
-      previous_operation = "reset";
-  }
+    var result_button = document.getElementById("result_show");
+    if(previous_operation == "equal")
+    {
+        reset();
+        previous_operation = "reset";
+    }
     if(id == "button1")
         shown_number = shown_number * 10 + 1;
     else if(id == "button2")
@@ -24,9 +24,9 @@ function insert(e2,id)
         shown_number = shown_number * 10 + 8;
     else if(id == "button9")
         shown_number = shown_number * 10 + 9;
-  result_button.innerHTML = shown_number.toString();
-  input_number = shown_number.toString();
-  console.log(input_number);
+    result_button.innerHTML = shown_number.toString();
+    input_number = shown_number.toString();
+    console.log(input_number);
 }
 
 function add()
@@ -168,7 +168,6 @@ function equal()
         console.log(result);
         result_button.innerHTML = result.toString();
         operations = result.toString();
-        //shown_number = 0;
     }
 }
 
@@ -182,12 +181,12 @@ function reset()
     result_button.innerHTML = result.toString();
 }
 
-/* Open */
-function openNav() {
+function openNav() 
+{
     document.getElementById("myNav").style.height = "100%";
-  }
+}
   
-  /* Close */
-  function closeNav() {
+function closeNav() 
+{
     document.getElementById("myNav").style.height = "0%";
-  }
+}
