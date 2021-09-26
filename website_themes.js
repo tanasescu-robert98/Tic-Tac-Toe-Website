@@ -1,5 +1,6 @@
 function changeBodyBg()
 {
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
     switch(document.body.style.background) 
     {
         case '':

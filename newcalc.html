@@ -413,6 +413,21 @@ body {
   <br>
   <br>
 
+  <script>
+  switch(localStorage.clickcount % 3) 
+  {
+    case 0:
+    document.body.style.background = '';
+        break;
+    case 1:
+        document.body.style.background = 'powderblue';
+        break;
+    case 2:
+        document.body.style.background = 'black';
+        break;
+  }
+</script>
+
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
     
   <!-- <button class="buttonclickable" onclick="changeBodyBg('lime');">&nbsp; &nbsp; &nbsp; Change Theme &nbsp; &nbsp; &nbsp;</button> -->

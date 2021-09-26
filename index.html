@@ -330,6 +330,7 @@ function opentopnav() {
 
 <script src="website.js"></script>
 <script src="website_themes.js"></script>
+<script src="persistent_data.js"></script>
 
 <br/><br/>
 
@@ -357,9 +358,30 @@ function opentopnav() {
 
 <br/><br/><br/>
 
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 
-<!-- <button class="buttonclickable" onclick="changeBodyBg('lime');">&nbsp; &nbsp; &nbsp; Change Theme &nbsp; &nbsp; &nbsp;</button> -->
+<p id="testare"></p>
+
+<script>
+  document.getElementById("testare").innerHTML = localStorage.clickcount;
+  switch(localStorage.clickcount % 3) 
+  {
+    case 0:
+    document.body.style.background = '';
+        break;
+    case 1:
+        document.body.style.background = 'powderblue';
+        break;
+    case 2:
+        document.body.style.background = 'black';
+        break;
+  } 
+</script>
 
 <br><br><br>
 
