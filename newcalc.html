@@ -409,31 +409,29 @@ body {
   <button onclick="divide()" class="button_calc" id="button_divide">/</button>
   <button onclick="reset()" class="button_calc_C" id="button_equal">C</button>
 
-  <br>
-  <br>
-  <br>
+  <br><br><br>
 
   <script>
-  switch(localStorage.clickcount % 3) 
-  {
-    case 0:
-    document.body.style.background = '';
-        break;
-    case 1:
-        document.body.style.background = 'powderblue';
-        break;
-    case 2:
-        document.body.style.background = 'black';
-        break;
-  }
-</script>
+    var val1 = localStorage.getItem('value1');
+    console.log(val1);
+    switch(val1 % 3) 
+    {
+      case 0:
+          document.body.style.background = '';
+          break;
+      case 1:
+          document.body.style.background = 'powderblue';
+          break;
+      case 2:
+          document.body.style.background = 'black';
+          break;
+    } 
+  </script>
 
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
     
   <!-- <button class="buttonclickable" onclick="changeBodyBg('lime');">&nbsp; &nbsp; &nbsp; Change Theme &nbsp; &nbsp; &nbsp;</button> -->
-  <br>
-  <br>
-  <br>
+  <br><br><br>
 
   <button class="buttonclickable" >&nbsp; &nbsp; &nbsp; Garbage &nbsp; &nbsp; &nbsp;</button>
           
