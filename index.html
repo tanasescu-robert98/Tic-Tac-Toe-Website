@@ -368,8 +368,9 @@ function opentopnav() {
 <p id="testare"></p>
 
 <script>
-  document.getElementById("testare").innerHTML = localStorage.clickcount;
-  switch(localStorage.clickcount % 3) 
+  //document.getElementById("testare").innerHTML = localStorage.clickcount;
+  var val1 = localStorage.getItem('value1');
+  switch(val1 % 3) 
   {
     case 0:
     document.body.style.background = '';
@@ -381,6 +382,18 @@ function opentopnav() {
         document.body.style.background = 'black';
         break;
   } 
+  // switch(localStorage.clickcount % 3) 
+  // {
+  //   case 0:
+  //   document.body.style.background = '';
+  //       break;
+  //   case 1:
+  //       document.body.style.background = 'powderblue';
+  //       break;
+  //   case 2:
+  //       document.body.style.background = 'black';
+  //       break;
+  // } 
 </script>
 
 <br><br><br>
