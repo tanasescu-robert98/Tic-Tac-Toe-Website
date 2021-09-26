@@ -60,7 +60,7 @@ function set_x_or_0(e1)
   else if(document.body.style.background == 'powderblue')
   {
     bla.style.backgroundColor = "rgb(176,224,230)";
-    bla.innerHTML = "<span style='color:#FFFFFF'> Have fun! </span>";
+    bla.innerHTML = "<span style='color:#000000'> Have fun! </span>";
   }
   else if(document.body.style.background == 'black')
   {
@@ -77,7 +77,7 @@ function set_x_or_0(e1)
   else if(document.body.style.background == 'powderblue')
   {
     bla2.style.backgroundColor = "rgb(176,224,230)";
-    bla2.innerHTML = "<span style='color:#FFFFFF'> Have fun! </span>";
+    bla2.innerHTML = "<span style='color:#000000'> Have fun! </span>";
   }
   else if(document.body.style.background == 'black')
   {
