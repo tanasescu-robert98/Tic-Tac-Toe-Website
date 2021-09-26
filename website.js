@@ -52,12 +52,38 @@ function show_TIE()
 function set_x_or_0(e1)
 {
   var bla = document.getElementById("myDIV3");
-  bla.style.backgroundColor = "rgb(255,255,255)";
-  bla.innerHTML = "Have fun!";
+  if(document.body.style.background == '')
+  {
+    bla.style.backgroundColor = "rgb(255,255,255)";
+    bla.innerHTML = "<span style='color:#000000'> Have fun! </span>";
+  }
+  else if(document.body.style.background == 'powderblue')
+  {
+    bla.style.backgroundColor = "rgb(176,224,230)";
+    bla.innerHTML = "<span style='color:#FFFFFF'> Have fun! </span>";
+  }
+  else if(document.body.style.background == 'black')
+  {
+    bla.style.backgroundColor = "rgb(0,0,0)";
+    bla.innerHTML = "<span style='color:#FFFFFF'> Have fun! </span>";
+  }
 
   var bla2 = document.getElementById("myDIV4");
-  bla2.style.backgroundColor = "rgb(255,255,255)";
-  bla2.innerHTML = "Have fun!";
+  if(document.body.style.background == '')
+  {
+    bla2.style.backgroundColor = "rgb(255,255,255)";
+    bla2.innerHTML = "<span style='color:#000000'> Have fun! </span>";
+  }
+  else if(document.body.style.background == 'powderblue')
+  {
+    bla2.style.backgroundColor = "rgb(176,224,230)";
+    bla2.innerHTML = "<span style='color:#FFFFFF'> Have fun! </span>";
+  }
+  else if(document.body.style.background == 'black')
+  {
+    bla2.style.backgroundColor = "rgb(0,0,0)";
+    bla2.innerHTML = "<span style='color:#FFFFFF'> Have fun! </span>";
+  }
   if(e1.innerHTML == "0" || e1.innerHTML == "X")
           return;    
       if(GAME_OVER == 0)
